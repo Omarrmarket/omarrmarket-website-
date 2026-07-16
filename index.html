@@ -1,125 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OmarrMarket</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-}
-
-header{
-background:#111;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-.hero{
-padding:50px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:38px;
-margin-bottom:10px;
-}
-
-.hero p{
-color:#666;
-}
-
-button{
-background:#111;
-color:white;
-border:none;
-padding:15px 30px;
-border-radius:8px;
-font-size:18px;
-margin-top:20px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:30px;
-}
-
-.card{
-background:white;
-border-radius:12px;
-padding:15px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.price{
-font-size:22px;
-font-weight:bold;
-margin-top:10px;
-}
-
-footer{
-text-align:center;
-padding:25px;
-background:#111;
-color:white;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omarr Market</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-<h2>OmarrMarket</h2>
+    <h1>Omarr Market</h1>
+    <p>Buy & Sell Easily</p>
 </header>
 
-<section class="hero">
-<h1>Buy & Sell Anything</h1>
-<p>Electronics • Jewelry • Fashion • Cars • Phones • Home Appliances</p>
-<a href="#products"><button>Shop Now</button></a>
-</section>
-
-<section <section id="products" class="products">
-
-<div class="card">
-<img <img src="IMG_0091.jpeg">
-<h3>iPhone 15 Pro max</h3>
-<div class="price">$850</div>
+<div class="search-box">
+    <input
+        type="text"
+        id="search"
+        placeholder="Search products..."
+        onkeyup="searchProducts()">
 </div>
 
-<div class="card">
-<img <img src="IMG_0092.webp">
-<h3>Necklace</h3>
-<div class="price">$420</div>
+<div class="products">
+
+    <div class="product">
+        <img src="IMG_0091.jpeg" alt="Product">
+        <h3>Product One</h3>
+        <p>₦20,000</p>
+        <button onclick="addToCart('Product One', 20000)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="IMG_0092.webp" alt="Product">
+        <h3>Product Two</h3>
+        <p>₦15,000</p>
+        <button onclick="addToCart('Product Two', 15000)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="IMG_0093.jpeg" alt="Product">
+        <h3>Product Three</h3>
+        <p>₦35,000</p>
+        <button onclick="addToCart('Product Three', 35000)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="IMG_8234.jpeg" alt="Product">
+        <h3>Product Four</h3>
+        <p>₦50,000</p>
+        <button onclick="addToCart('Product Four', 50000)">
+            Add to Cart
+        </button>
+    </div>
+
 </div>
 
-<div class="card">
-<img <img src="IMG_0093.jpeg">
-<h3>smart Tv</h3>
-<div class="price">$990</div>
-</div>
-
-<div class="card">
-<img <img src="IMG_8234.jpeg">
-<h3>smart watch</h3></h3>
-<div class="price">$620</div>
-</div>
-
-</section>
-
-<footer>
-©️ 2026 OmarrMarket
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
