@@ -234,3 +234,38 @@ body {
 body{
     padding-bottom:90px;
 }
+/* Footer */
+
+.footer{
+    background:#111;
+    color:white;
+    padding:40px 20px 100px;
+    margin-top:40px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.footer h3,
+.footer h4{
+    margin-bottom:15px;
+}
+
+.footer a{
+    color:#ddd;
+    text-decoration:none;
+    line-height:2;
+}
+
+.footer a:hover{
+    color:#00b96b;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:30px;
+    color:#aaa;
+}
