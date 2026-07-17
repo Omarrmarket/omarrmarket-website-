@@ -95,4 +95,12 @@ header {
 .navbar a:hover {
     background: white;
     color: #008751;
+}.product a button {
+    width: 100%;
+    background: #25D366;
+    margin-top: 10px;
+}
+
+.product a button:hover {
+    background: #1DA851;
 }
