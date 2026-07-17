@@ -191,5 +191,10 @@ body {
 .product img{
     height:200px;
 }
-
+.section-title{
+    font-size:28px;
+    font-weight:bold;
+    margin:30px 20px 10px;
+    color:#222;
+}
 }
