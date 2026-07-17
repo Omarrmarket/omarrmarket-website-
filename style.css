@@ -104,3 +104,25 @@ header {
 .product a button:hover {
     background: #1DA851;
 }
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.categories button {
+    background: white;
+    color: #008751;
+    border: 2px solid #008751;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.categories button:hover {
+    background: #008751;
+    color: white;
+}
